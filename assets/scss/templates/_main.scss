@@ -1,6 +1,21 @@
 // banner
 .banner {
-  padding: 100px 0 50px;
+  padding: 40px 0 40px;
+  background-color: $light;
+}
+
+.banner .container {
+  border-radius: 10px;
+  background-color: $white;
+  padding: 40px;
+  transition: .2s ease;
+
+  @extend .shadow;
+
+}
+
+.banner p {
+  font-size: 1.4em;
 }
 
 .feature-card {
@@ -76,6 +91,7 @@ a.post-title {
 
   img {
     max-width: 100%;
+    height: 50px;
   }
 
   h1,

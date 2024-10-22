@@ -1,0 +1,8 @@
+<h2 class="section-title" id="{{ .title | urlize }}">{{ .title | markdownify }}</h2>
+<p>{{ .content | markdownify }}</p>
+{{ if .button.enable }}
+{{ with .button }}
+<a href="{{ .link | relURL }}" target="_blank" rel="noopener noreferrer" title="{{ .label }}" class="btn-link">{{ .label
+    }} <i class="fas fa-arrow-right"></i></a>
+{{ end }}
+{{ end }}

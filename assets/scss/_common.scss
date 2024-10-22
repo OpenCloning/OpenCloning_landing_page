@@ -4,7 +4,7 @@ body {
 }
 
 ::selection {
-  background-color:darken($color: $primary-color, $amount: 10);
+  background-color: darken($color: $primary-color, $amount: 10);
   color: $white;
 }
 
@@ -72,9 +72,14 @@ a:hover {
   outline: 0;
 }
 
+.feature-section.section {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .section {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
   &-title {
     margin-bottom: 30px;
@@ -120,12 +125,12 @@ a:hover {
   color: $primary-color !important;
 }
 
-.rounded-lg{
+.rounded-lg {
   border-radius: 10px !important;
 }
 
-.shadow{
-  box-shadow: 0 12px 24px -6px rgba(45,67,121,.10) !important;
+.shadow {
+  box-shadow: 0 12px 24px -6px rgba(45, 67, 121, .10) !important;
 }
 
 // form control
@@ -146,16 +151,17 @@ textarea.form-control {
   height: 100px !important;
 }
 
-.list-unstyled{
-  li{
+.list-unstyled {
+  li {
     margin-bottom: 10px;
   }
 }
 
-.check-mark{
+.check-mark {
   position: relative;
   padding-left: 0px;
-  &::before{
+
+  &::before {
     position: absolute;
     content: "\f058";
     color: $primary-color;
@@ -165,7 +171,8 @@ textarea.form-control {
     left: -30px;
     top: 3px;
   }
-  svg{
+
+  svg {
     position: absolute;
     color: $primary-color;
     font-size: 25px;

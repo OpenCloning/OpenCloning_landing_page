@@ -28,6 +28,13 @@ theme = "bigspring-light"
     url = "about/"
     weight = 2
 
+  [[menu.main]]
+    identifier = "Partners"
+    name = "Partners"
+    title = "Partners"
+    url = "partners/"
+    weight = 3
+
 #################### default parameters ################################
 [params]
 # logo = "images/logo.png"
@@ -36,6 +43,25 @@ theme = "bigspring-light"
 description = "This is meta description"
 author = "Manuel Lera-Ramirez"
 # image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
+
+[params.variables]
+# Blue combination
+primary_color = "#3A80D2"
+light = "#F0F7FF"
+# Red combination
+# primary_color = "#FF5733"
+# light = "#FFE5D9"
+# Orange combination
+# primary_color = "#F59E0B"
+# light = "#FEF3C7"
+# Pink combination
+# primary_color = "#EC4899"
+# light = "#FDF2F8"
+# Purple combination
+# primary_color = "#8B5CF6"
+# light = "#F9F5FF"
+
+
 
 
 # # Preloader
