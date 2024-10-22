@@ -1,0 +1,46 @@
+######################## default configuration ####################
+baseURL = "/"
+title = "The shiny title"
+theme = "bigspring-light"
+# post pagination
+paginate = "3"
+# post excerpt
+summaryLength = "15"
+
+# unsafe html
+[markup.goldmark.renderer]
+unsafe = true
+
+theme = "bigspring-light"
+
+[menu]
+  [[menu.main]]
+    identifier = "Home"
+    name = "Home"
+    title = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "About"
+    name = "About"
+    title = "About"
+    url = "about/"
+    weight = 2
+
+#################### default parameters ################################
+[params]
+# logo = "images/logo.png"
+# logo_width = "200px"
+# OpenGraph / Twitter Card metadata
+description = "This is meta description"
+author = "Manuel Lera-Ramirez"
+# image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
+
+
+# # Preloader
+# [[params.preloader]]
+# enable = false
+# preloader = "" # use jpg, png, svg or gif format.
+
+
