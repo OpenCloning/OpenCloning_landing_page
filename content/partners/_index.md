@@ -25,3 +25,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique ege
 </a>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat.
+
+<a href="https://labid-demo.embl.de" target="_blank">
+  <img src="/images/service-3.png" id="labID" alt="labId">
+</a>

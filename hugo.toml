@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "/"
+baseURL = "https://example-working-group-website.netlify.app/"
 title = "The shiny title"
 theme = "bigspring-light"
 # post pagination
@@ -42,6 +42,7 @@ theme = "bigspring-light"
 # OpenGraph / Twitter Card metadata
 description = "This is meta description"
 author = "Manuel Lera-Ramirez"
+favicon = "images/web/favicon.ico"
 # image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 
 [params.variables]
