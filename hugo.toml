@@ -1,11 +1,11 @@
 ######################## default configuration ####################
 baseURL = "https://example-working-group-website.netlify.app/"
-title = "The shiny title"
+title = "OpenCloneKit"
 theme = "bigspring-light"
 # post pagination
-paginate = "3"
+paginate = 3
 # post excerpt
-summaryLength = "15"
+summaryLength = 15
 
 # unsafe html
 [markup.goldmark.renderer]
@@ -14,26 +14,26 @@ unsafe = true
 theme = "bigspring-light"
 
 [menu]
-  [[menu.main]]
-    identifier = "Home"
-    name = "Home"
-    title = "Home"
-    url = "/"
-    weight = 1
+[[menu.main]]
+identifier = "Home"
+name = "Home"
+title = "Home"
+url = "/"
+weight = 1
 
-  [[menu.main]]
-    identifier = "About"
-    name = "About"
-    title = "About"
-    url = "about/"
-    weight = 2
+[[menu.main]]
+identifier = "About"
+name = "About"
+title = "About"
+url = "about/"
+weight = 2
 
-  [[menu.main]]
-    identifier = "Partners"
-    name = "Partners"
-    title = "Partners"
-    url = "partners/"
-    weight = 3
+[[menu.main]]
+identifier = "Partners"
+name = "Partners"
+title = "Partners"
+url = "partners/"
+weight = 3
 
 #################### default parameters ################################
 [params]
@@ -63,11 +63,7 @@ light = "#F0F7FF"
 # light = "#F9F5FF"
 
 
-
-
 # # Preloader
 # [[params.preloader]]
 # enable = false
 # preloader = "" # use jpg, png, svg or gif format.
-
-

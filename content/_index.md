@@ -1,8 +1,8 @@
 ---
 ####################### Banner #########################
 banner:
-  title : "The shiny title"
-  content : "A suite of integrated Open Source projects to plan and document your next cloning project"
+  title : "OpenCloneKit"
+  content : "A suite of integrated Open Source tools to plan and document your next cloning project"
 
 ##################### Feature ##########################
 feature:
@@ -36,25 +36,49 @@ service:
   service_item:
     # service item loop
     - title : "Pydna"
-      scripts:
-      - path: "./script1.py"
-        title: "Design primers for Gibson Assembly"
-      - path: "./script1.py"
+      panels:
+      - path: "./pydna_script1.py"
+        title: "Import sequences from multiple sources"
+        type: "code"
+      - path: "./pydna_script2.py"
         title: "Simulate restriction and ligation"
-      - path: "./script1.py"
-        title: "Another example"
-      content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+        type: "code"
+      - path: "./pydna_script3.py"
+        title: "Design PCR primers"
+        type: "code"
+      - path: "./pydna_script4.py"
+        title: "Design Gibson primers and assemble"
+        type: "code"
+      - path: "images/documentation.png"
+        title: "Excellent documentation with real-world examples"
+        type: "image"
+        button:
+          content: "Visit the docs"
+          link: "https://bjornfjohansson.github.io/pydna/getting_started.html"
+      content : Built on top of 🐍 Biopython 🧬, pydna is a package providing modules to simulate cloning handle double-stranded DNA. From simulating DNA assemblies to automating complex cloning workflows, pydna empowers you to plan and document your cloning projects 🚀🔬✨
       button:
         enable : true
         label : "Check it out"
         link : "https://github.com/BjornFJohansson/pydna"
-        
     # service item loop
     - title : "ShareYourCloning"
-      images:
-      - "images/service-2.png"
-      - "images/service-2.png"
-      content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+      panels:
+      - path: "images/genome.gif"
+        title: "Access gene sequences from NCBI"
+        type: "image"
+      - path: "images/repositories.gif"
+        title: "Get plasmid sequences from AddGene or SnapGene"
+        type: "image"
+      - path: "images/supported_cloning.png"
+        title: "Support for many cloning methods"
+        type: "image"
+      - path: "images/templates.gif"
+        title: "Use cloning kit templates (MoClo, Gibson...)"
+        type: "image"
+      - path: "images/primer_design.gif"
+        title: "Design primers for Homologous Recombination, Gibson, etc."
+        type: "image"
+      content : "An Open Source web application to plan and visualize cloning strategies. 🎉No coding required!🎉 It provides an intuitive interface to plan your cloning strategy, export it to an open file format and generate publication-ready figures 📊🔬🎨"
       button:
         enable : true
         label : "Check it out"
@@ -62,30 +86,33 @@ service:
 
 # service item loop
     - title : "Teemi"
-      scripts:
-      - path: "./script1.py"
+      panels:
+      - path: "./teemi_example1.py"
         title: "Example 1"
-      - path: "./script1.py"
+        type: "code"
+      - path: "./teemi_example1.py"
         title: "Example 2"
-      - path: "./script1.py"
+        type: "code"
+      - path: "./teemi_example1.py"
         title: "Example 3"
-      content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+        type: "code"
+      content : "A pydna extension for ⚖️ FAIR ⚖️ microbial strain construction. It covers the entire DBTL (Design-Build-Test-Learn) cycle, allowing users to design genetic libraries, simulate workflows, and track samples efficiently. Boost your metabolic engineering projects with streamlined automation and flexible workflows! 🚀🧬"
       button:
         enable : true
         label : "Check it out"
         link : "https://github.com/hiyama341/teemi"
 
-        
     # service item loop
     - title : "Single data model"
-      images:
-      - "images/service-2.png"
+      panels:
+      - path: "images/service-2.png"
+        title: "Example 1"
+        type: "image"
       content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
       button:
         enable : true
         label : "Check it out"
         link : "/about/"
-        
 
 #################### Logo section #####################
 logo:

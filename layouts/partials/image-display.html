@@ -1,5 +1,0 @@
-<div {{if and .images (gt (len .images) 1)}} class="slider" {{end}}>
-    {{ range .images }}
-    <img src="{{ . | relURL }}" alt="" class="img-fluid">
-    {{ end }}
-</div>

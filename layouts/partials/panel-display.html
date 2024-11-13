@@ -1,0 +1,19 @@
+<div {{if and .panels (gt (len .panels) 1)}} class="slow-slider" {{end}}>
+    {{ range .panels }}
+    <div>
+        <div class="text-center mb-2 slider-title">{{ .title }}</div>
+        <div>
+            {{ if eq .type "image" }}
+            <img src="{{ .path | relURL }}" alt="" class="img-fluid text-center mx-auto">
+            {{ else if eq .type "code" }}
+            {{ $content := readFile .path }}
+            <pre><code class="language-python">{{ $content }}</code></pre>
+            {{ end }}
+        </div>
+        {{ if .button }}
+        <div class="mt-2 mx-auto text-center"><a target="_blank" class="btn btn-primary" href="{{ .button.link }}">{{
+                .button.content | markdownify }}</a></div>
+        {{ end }}
+    </div>
+    {{ end }}
+</div>
