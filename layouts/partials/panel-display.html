@@ -7,7 +7,14 @@
             <img src="{{ .path | relURL }}" alt="" class="img-fluid text-center mx-auto">
             {{ else if eq .type "code" }}
             {{ $content := readFile .path }}
-            <pre><code class="language-python">{{ $content }}</code></pre>
+            {{ $ext := path.Ext .path }}
+            {{ $lang := "" }}
+            {{ if eq $ext ".py" }}
+            {{ $lang = "python" }}
+            {{ else if eq $ext ".json" }}
+            {{ $lang = "json" }}
+            {{ end }}
+            <pre><code class="language-{{ $lang }}">{{ $content }}</code></pre>
             {{ end }}
         </div>
         {{ if .button }}

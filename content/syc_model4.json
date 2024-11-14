@@ -1,0 +1,27 @@
+{
+    "id": 7,
+    "input": [4],
+    "output": 8,
+    "type": "PCRSource",
+    "circular": false,
+    "assembly": [ < You can represent a PCR like and assembly
+        {
+            "sequence": 12, < primer id
+            "left_location": null,
+            "right_location": "15..38", < Forward primer hybridization site
+            "reverse_complemented": false
+        },
+        {
+            "sequence": 4, < template sequence id
+            "left_location": "1170..1193",
+            "right_location": "3397..3416",
+            "reverse_complemented": false
+        },
+        {
+            "sequence": 13, < primer id
+            "left_location": "0..19", < Reverse primer hybridization site
+            "right_location": null,
+            "reverse_complemented": true
+        }
+    ]
+}

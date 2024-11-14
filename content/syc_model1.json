@@ -1,0 +1,11 @@
+{
+    "id": 1,
+    "input": [],
+    "output": 2,
+    "type": "AddGeneIdSource",
+    "output_name": null,
+    "repository_id": "52691",
+    "repository_name": "addgene",
+    "sequence_file_url": "https://media.addgene.org/snapgene-media/v2.0.0/sequences/210876/0ad0ffaa-d9b9-48c4-af54-19e87587070e/addgene-plasmid-52691-sequence-210876.gbk",
+    "addgene_sequence_type": "addgene-full"
+}

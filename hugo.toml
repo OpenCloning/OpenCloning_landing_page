@@ -22,10 +22,10 @@ url = "/"
 weight = 1
 
 [[menu.main]]
-identifier = "About"
-name = "About"
-title = "About"
-url = "about/"
+identifier = "Team"
+name = "Team"
+title = "Team"
+url = "team/"
 weight = 2
 
 [[menu.main]]
@@ -34,6 +34,13 @@ name = "Partners"
 title = "Partners"
 url = "partners/"
 weight = 3
+
+[[menu.main]]
+identifier = "Contact"
+name = "Contact"
+title = "Contact"
+url = "contact/"
+weight = 4
 
 #################### default parameters ################################
 [params]

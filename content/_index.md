@@ -105,14 +105,23 @@ service:
     # service item loop
     - title : "Single data model"
       panels:
-      - path: "images/service-2.png"
-        title: "Example 1"
-        type: "image"
-      content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+      - path: "./syc_model1.json"
+        title: "External sequence: AddGene plasmid"
+        type: "code"
+      - path: "./syc_model2.json"
+        title: "External sequence: NCBI genome region with gene of interest"
+        type: "code"
+      - path: "./syc_model3.json"
+        title: "Experiment: Gibson assembly of a plasmid"
+        type: "code"
+      - path: "./syc_model4.json"
+        title: "Experiment: PCR"
+        type: "code"
+      content : "A simple interoperable data model developed with [LinkML](https://linkml.io/) to represent the provenance of engineered DNA sequences. Currently used in [ShareYourCloning](#shareyourcloning) but to be supported by all other tools soon."
       button:
         enable : true
         label : "Check it out"
-        link : "/about/"
+        link : "/team/"
 
 #################### Logo section #####################
 logo:

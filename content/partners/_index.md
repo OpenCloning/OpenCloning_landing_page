@@ -2,6 +2,8 @@
 title: "Partners"
 ---
 
+> 🛠️ **In construction** 🛠️ - coming soon
+
 <a href="https://www.pombase.org" target="_blank">
   <img src="https://www.pombase.org/assets/pombase-logo.png" id="pombase" alt="Pombase" class="img-fluid">
 </a>
@@ -26,6 +28,3 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique ege
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat.
 
-<a href="https://labid-demo.embl.de" target="_blank">
-  <img src="/images/service-3.png" id="labID" alt="labId">
-</a>

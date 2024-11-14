@@ -1,0 +1,22 @@
+{
+    "id": 11,
+    "input": [10, 8], < ids of the input sequences
+    "output": 12, < id of the output sequence
+    "type": "GibsonAssemblySource",
+    "circular": true, < whether assembly is circular
+    "assembly": [ < list of assembly fragments
+        {
+            "sequence": 10, < id of the sequence where fragment comes from
+            "left_location": "1..36", < homology between this sequence and previous fragment
+            "right_location": "8315..8351", < homology between this sequence and next fragment
+            "reverse_complemented": false
+        },
+        {
+            "sequence": 8,
+            "left_location": "1..36", < Standard genbank location format
+            "right_location": "2243..2279",
+            "reverse_complemented": false
+        }
+
+    ]
+}

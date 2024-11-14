@@ -1,8 +1,8 @@
 ---
-title: "About"
+title: "Team"
 people:
   - name: "Björn Johansson"
-    bio: "I focus on metabolic engineering of lipid metabolism in baker’s yeast, _S. cerevisiae_ ultimatily to create sustainable sources of specialized fatty acids. I am also interested in open science, specifically the creation and maintenance of complete and verifiable genetic design documents. I am the original creator of pydna, a Python package that enables simulation of cloning strategies."
+    bio: "I focus on metabolic engineering of lipid metabolism in baker’s yeast, _S. cerevisiae_ ultimatily to create sustainable sources of specialized fatty acids. I am also interested in open science, specifically the creation and maintenance of complete and verifiable genetic design documents. I am the original creator of [pydna](https://github.com/bjornfjohansson/pydna), a Python package that enables simulation of cloning strategies."
     image: "https://cbma.uminho.pt/wp-content/uploads/2024/08/Bjorn-Johanson-768x768.jpg"
     github: "https://github.com/bjornfjohansson"
     twitter: "#"
@@ -10,7 +10,7 @@ people:
     orcid: "https://orcid.org/0000-0002-7723-074X"
     affiliation: "University of Minho"
   - name: "Daniel García-Ruano"
-    bio: "Daniel García-Ruano studied experimental evolution in fission yeast during his PhD, gaining interest in computational approaches and reproducibility in science. He started collaborating with ShareYourCloning as a testing user to later dive in the code and implement new use cases. Currently, he is a non-tenured associate professor in Cell Biology at the University of Bordeaux, with a research intereset in machine learning for transcript classification."
+    bio: "I studied experimental evolution in fission yeast during my PhD, gaining interest in computational approaches and reproducibility in science. I started collaborating with [ShareYourCloning](https://shareyourcloning.org) as a testing user to later dive in the code and implement new use cases. Currently, I am a non-tenured associate professor in Cell Biology at the University of Bordeaux, with a research intereset in machine learning for transcript classification."
     image: "images/portraits/dani.jpg"
     github: "https://github.com/dgruano"
     twitter: "https://x.com/soybiotec/"
@@ -26,7 +26,8 @@ people:
     orcid: "https://orcid.org/0000-0002-3261-9911"
     affiliation: "DTU - Technical University of Denmark"
   - name: "Manuel Lera-Ramírez"
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+    bio: "During my PhD I used fission yeast genetics to study the mitotic spindle, combining experimental and computational approaches. I grew increasingly interested in FAIR (Findable, Accessible, Interoperable, Reusable) data in the context of model organism genetics, and decided to join PomBase, the model organism database for fission yeast, where I developed quality control pipelines and worked as a biocurator.
+    Now I am working on [ShareYourCloning](https://shareyourcloning.org), an Open Source web application to plan and document cloning and genetic engineering. I am also an active contributor and maintainer of [pydna](https://github.com/bjornfjohansson/pydna)."
     image: "https://elixiruknode.org/wp-content/uploads/2024/01/profile-manuel-lera.webp"
     github: "https://github.com/manulera"
     twitter: "https://x.com/manu_lera"
