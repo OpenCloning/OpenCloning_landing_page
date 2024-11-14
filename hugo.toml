@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://example-working-group-website.netlify.app/"
+baseURL = "https://openclonekit.netlify.app/"
 title = "OpenCloneKit"
 theme = "bigspring-light"
 # post pagination
