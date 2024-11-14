@@ -17,6 +17,9 @@
             <pre><code class="language-{{ $lang }}">{{ $content }}</code></pre>
             {{ end }}
         </div>
+        {{ if .content }}
+        <div class="mt-4 mb-4 mx-auto text-center">{{ .content | markdownify }}</div>
+        {{ end }}
         {{ if .button }}
         <div class="mt-2 mx-auto text-center"><a target="_blank" class="btn btn-primary" href="{{ .button.link }}">{{
                 .button.content | markdownify }}</a></div>

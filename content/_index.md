@@ -117,11 +117,18 @@ service:
       - path: "./syc_model4.json"
         title: "Experiment: PCR"
         type: "code"
+      - path: "https://linkml.io/uploads/linkml-logo_color.png"
+        title: "Powered by LinkML"
+        type: "image"
+        content: "LinkML allows you to work with this data model in your stack of choice: Python, SQL, RDF, JSON Schema, TypeScript, etc."
+        button:
+          content: "Learn more"
+          link: "https://linkml.io/"
       content : "A simple interoperable data model developed with [LinkML](https://linkml.io/) to represent the provenance of engineered DNA sequences. Currently used in [ShareYourCloning](#shareyourcloning) but to be supported by all other tools soon."
       button:
         enable : true
         label : "Check it out"
-        link : "/team/"
+        link : "https://github.com/genestorian/ShareYourCloning_LinkML?tab=readme-ov-file"
 
 #################### Logo section #####################
 logo:
@@ -142,7 +149,12 @@ call_to_action:
   enable : true
   title : "Join our community"
   image : "images/cta.svg"
-  content : "Partner with like-minded scientists to improve documentation and reproducibility in cloning"
+  content : "
+  Our goal is to help **adapt** and **implement** these tools in diverse settings: BioFoundries, Electronic Lab Notebooks, Data repositories, research groups, etc.
+
+
+  Join like-minded scientists in improving documentation and reproducibility in cloning
+  "
   button:
     enable : true
     label : "Contact Us"
