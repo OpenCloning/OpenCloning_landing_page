@@ -1,9 +1,9 @@
 ######################## default configuration ####################
-baseURL = "https://openclonekit.netlify.app/"
-title = "OpenCloneKit"
+baseURL = "https://opencloning.org/"
+title = "OpenCloning"
 theme = "bigspring-light"
 # post pagination
-paginate = 3
+# paginate = 3
 # post excerpt
 summaryLength = 15
 
@@ -54,8 +54,8 @@ favicon = "images/web/favicon.ico"
 
 [params.variables]
 # Blue combination
-primary_color = "#3A80D2"
-light = "#F0F7FF"
+primary_color = "#1976d2"
+light = "#d3e6f9"
 # Red combination
 # primary_color = "#FF5733"
 # light = "#FFE5D9"

@@ -8,8 +8,8 @@ Once you have hugo installed:
 
 ```bash
 # Clone the repository
-git clone https://github.com/manulera/working-group-website
-cd working-group-website
+git clone https://github.com/manulera/OpenCloning_landing_page
+cd OpenCloning_landing_page
 
 # Install the theme as a submodule
 git submodule init

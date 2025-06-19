@@ -1,32 +1,32 @@
 ---
 ####################### Banner #########################
 banner:
-  title : "OpenCloneKit"
-  content : "A suite of integrated Open Source tools to plan and document your next cloning project"
+  title : "OpenCloning"
+  content : "An Open-Source web application for DNA engineering"
 
 ##################### Feature ##########################
 feature:
   enable : true
   feature_item:
     # feature item loop
-    - name : "pydna"
+    - name : "Import from anywhere"
+      icon : "fas fa-file-import"
+      content : "Your files, NCBI, AddGene, SnapGene, iGEM, etc."
+
+    # feature item loop
+    - name : "Engineer anything"
       icon : "fas fa-dna"
-      content : "Python library to simulate cloning<br>(PCR, Gibson, Golden Gate...)"
+      content : "PCR, Gibson, Golden Gate, Gateway, In vivo assembly, CRISPR, homologous recombination, etc."
 
     # feature item loop
-    - name : "teemi"
-      icon : "fas fa-bacterium"
-      content : "Pydna extension for strain engineering<br>Jupyter Notebooks as experiment documentation"
+    - name : "Automate everything"
+      icon : "fas fa-robot"
+      content : "Use scripts, notebook, forms and templates to automate repetitive design and engineering tasks"
 
     # feature item loop
-    - name : "ShareYourCloning"
-      icon : "fas fa-window-restore"
-      content : "Web application to plan and visualize cloning strategies<br>No need to code!"
-
-    # feature item loop
-    - name : "Single data model"
-      icon : "fas fa-database"
-      content : "All tools produce and understand the same file format"
+    - name : "Share with anyone"
+      icon : "fas fa-users"
+      content : "Export your cloning workflow in a well-documented and FAIR Open File Format."
 
 
 
@@ -35,33 +35,7 @@ service:
   enable : true
   service_item:
     # service item loop
-    - title : "Pydna"
-      panels:
-      - path: "./pydna_script1.py"
-        title: "Import sequences from multiple sources"
-        type: "code"
-      - path: "./pydna_script2.py"
-        title: "Simulate restriction and ligation"
-        type: "code"
-      - path: "./pydna_script3.py"
-        title: "Design PCR primers"
-        type: "code"
-      - path: "./pydna_script4.py"
-        title: "Design Gibson primers and assemble"
-        type: "code"
-      - path: "images/documentation.png"
-        title: "Excellent documentation with real-world examples"
-        type: "image"
-        button:
-          content: "Visit the docs"
-          link: "https://bjornfjohansson.github.io/pydna/getting_started.html"
-      content : Built on top of 🐍 Biopython 🧬, pydna is a package providing modules to simulate cloning handle double-stranded DNA. From simulating DNA assemblies to automating complex cloning workflows, pydna empowers you to plan and document your cloning projects 🚀🔬✨
-      button:
-        enable : true
-        label : "Check it out"
-        link : "https://github.com/BjornFJohansson/pydna"
-    # service item loop
-    - title : "ShareYourCloning"
+    - title : "Import from anywhere"
       panels:
       - path: "images/genome.gif"
         title: "Access gene sequences from NCBI"
@@ -69,51 +43,57 @@ service:
       - path: "images/repositories.gif"
         title: "Get plasmid sequences from AddGene or SnapGene"
         type: "image"
+      - path: "images/all_repositories.png"
+        title: "Many other repositories supported!"
+        type: "image"
+      content : "From many online repositories and local files."
+      # button:
+      #   enable : true
+      #   label : "Check it out"
+      #   link : "https://opencloning.org"
+
+# service item loop
+    - title : "Engineer anything"
+      panels:
       - path: "images/supported_cloning.png"
-        title: "Support for many cloning methods"
+        title: "Support for most cloning methods"
         type: "image"
-      - path: "images/templates.gif"
-        title: "Use cloning kit templates (MoClo, Gibson...)"
-        type: "image"
+
       - path: "images/primer_design.gif"
         title: "Design primers for Homologous Recombination, Gibson, etc."
         type: "image"
-      content : "An Open Source web application to plan and visualize cloning strategies. 🎉No coding required!🎉 It provides an intuitive interface to plan your cloning strategy, export it to an open file format and generate publication-ready figures 📊🔬🎨"
-      button:
-        enable : true
-        label : "Check it out"
-        link : "https://shareyourcloning.org"
-
-# service item loop
-    - title : "Teemi"
-      panels:
-      - path: "./teemi_example1.py"
-        title: "Example 1"
-        type: "code"
-      - path: "./teemi_example1.py"
-        title: "Example 2"
-        type: "code"
-      - path: "./teemi_example1.py"
-        title: "Example 3"
-        type: "code"
-      content : "A pydna extension for ⚖️ FAIR ⚖️ microbial strain construction. It covers the entire DBTL (Design-Build-Test-Learn) cycle, allowing users to design genetic libraries, simulate workflows, and track samples efficiently. Boost your metabolic engineering projects with streamlined automation and flexible workflows! 🚀🧬"
+      content : "Supports most cloning methods and has powerful primer design capabilities."
       button:
         enable : true
         label : "Check it out"
         link : "https://github.com/hiyama341/teemi"
 
-    # service item loop
-    - title : "Single data model"
+    - title : "Automate everything"
       panels:
+      - path: "images/templates.gif"
+        title: "Use templates when using cloning kits"
+        type: "image"
+      content : "Use scripts, notebook, forms and templates to speed up design"
+      button:
+        enable : true
+        label : "Get started"
+        link : "https://github.com/hiyama341/teemi"
+
+    # service item loop
+    - title : "Share with anyone"
+      panels:
+      - path: "images/cloning_strategy.png"
+        title: "Capture the entire cloning workflow"
+        type: "image"
       - path: "./syc_model1.json"
         title: "External sequence: AddGene plasmid"
         type: "code"
-      - path: "./syc_model2.json"
-        title: "External sequence: NCBI genome region with gene of interest"
-        type: "code"
-      - path: "./syc_model3.json"
-        title: "Experiment: Gibson assembly of a plasmid"
-        type: "code"
+      # - path: "./syc_model2.json"
+      #   title: "External sequence: NCBI genome region with gene of interest"
+      #   type: "code"
+      # - path: "./syc_model3.json"
+      #   title: "Experiment: Gibson assembly of a plasmid"
+      #   type: "code"
       - path: "./syc_model4.json"
         title: "Experiment: PCR"
         type: "code"
@@ -124,7 +104,7 @@ service:
         button:
           content: "Learn more"
           link: "https://linkml.io/"
-      content : "A simple interoperable data model developed with [LinkML](https://linkml.io/) to represent the provenance of engineered DNA sequences. Currently used in [ShareYourCloning](#shareyourcloning) but to be supported by all other tools soon."
+      content : "You can export full DNA engineering workflows. OpenCloning uses a simple interoperable data model developed with [LinkML](https://linkml.io/) to represent the provenance of engineered DNA sequences."
       button:
         enable : true
         label : "Check it out"
