@@ -25,7 +25,7 @@ The site should be live at http://localhost:1313/.
 
 ### Content
 
-Content is mostly included in markdown files in the `content` folder. `content/_index.md` is the main page of the site, and the pages of the submenus are in the folders `content/team`, `content/partners`, etc.
+Content is mostly included in markdown files in the `content` folder. `content/_index.md` is the main page of the site, and the pages of the submenus are in the folders `content/people`, `content/success-stories`, etc.
 
 The Hugo templates often use the [yaml frontmatter](https://gohugo.io/content-management/front-matter/) to include metadata. It's a section at the top of the file that starts with `---` and ends with `---` and is in yaml format. A good example of this is `content/_index.md`, where there is not actual markdown content, but only metadata.
 
@@ -52,7 +52,7 @@ The site uses a theme called [bigspring-light](https://github.com/gethugothemes/
 
 ⚠️**Important:** resist the temptation to modify the theme files. If you need to change the look of the site, do it by copying the file to the root project folder, and modifying the copy.
 
-If you want to add a new template (e.g. the one for the team page), you have to create a new file in the `layouts/_default` folder that matches the name of the page. For instance, to add a new template for the team page (in `content/team/_index.md`), create `layouts/_default/team.html`. See that file for example of how to structure it.
+If you want to add a new template (e.g. the one for the people page), you have to create a new file in the `layouts/_default` folder that matches the name of the page. For instance, to add a new template for the people page (in `content/people/_index.md`), create `layouts/_default/people.html`. See that file for example of how to structure it.
 
 ## Content license
 

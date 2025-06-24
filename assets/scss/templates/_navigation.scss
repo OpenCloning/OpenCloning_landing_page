@@ -1,10 +1,15 @@
 .navigation {
-  background-color: $light !important;
+  background-color: $primary-color !important;
   font-size: 1.4em;
 }
 
-.navbar-brand {
+.navbar a.navbar-brand {
   font-size: 1.4em;
+  color: $white;
+
+  &:hover {
+    color: mix($white, $primary-color, 60%);
+  }
 }
 
 .nav-item {
@@ -17,10 +22,10 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: $text-color-dark;
+  color: $white;
 
   &:hover {
-    color: $primary-color;
+    color: mix($white, $primary-color, 60%);
   }
 }
 

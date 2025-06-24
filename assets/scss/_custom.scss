@@ -3,6 +3,12 @@
 
 div.feature-card {
     cursor: pointer;
+    
+    &:hover,
+    &:active,
+    &:focus {
+      @extend .shadow;
+    }
 }
 
 div.logo-item {
@@ -29,20 +35,20 @@ div.person h3 {
 }
 
 div.slider-title {
-    font-size: 1.2em;
+    font-size: 1.4em;
     
 }
 
 button.slick-arrow.slick-next:before {
     content: "\f054";
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 6 Free";
     font-weight: 900;
     color: $primary-color;
 }
 
 button.slick-arrow.slick-prev:before {
     content: "\f053";
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 6 Free";
     
     color: $primary-color;
 }
@@ -53,6 +59,10 @@ div.slow-slider pre{
 
 div.slow-slider img {
     max-height: 300px;
+}
+
+div.slow-slider img.img-large {
+    max-height: 400px;
 }
 
 ul {

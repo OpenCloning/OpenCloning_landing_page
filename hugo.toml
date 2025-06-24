@@ -22,40 +22,56 @@ url = "/"
 weight = 1
 
 [[menu.main]]
-identifier = "Team"
-name = "Team"
-title = "Team"
-url = "team/"
+identifier = "Getting Started"
+name = "Getting Started"
+title = "Getting Started"
+url = "getting-started/"
 weight = 2
 
 [[menu.main]]
-identifier = "Partners"
-name = "Partners"
-title = "Partners"
-url = "partners/"
+identifier = "People"
+name = "People"
+title = "People"
+url = "people/"
 weight = 3
+
+[[menu.main]]
+identifier = "Success stories"
+name = "Success stories"
+title = "Success stories"
+url = "success-stories/"
+weight = 4
 
 [[menu.main]]
 identifier = "Contact"
 name = "Contact"
 title = "Contact"
 url = "contact/"
-weight = 4
+weight = 5
 
 #################### default parameters ################################
 [params]
 # logo = "images/logo.png"
 # logo_width = "200px"
 # OpenGraph / Twitter Card metadata
-description = "This is meta description"
+description = "An Open-Source web application for DNA engineering"
 author = "Manuel Lera-Ramirez"
 favicon = "images/web/favicon.ico"
 # image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 
 [params.variables]
 # Blue combination
-primary_color = "#1976d2"
-light = "#d3e6f9"
+primary_color = "rgb(25, 118, 210)"
+# light = "rgb(25, 118, 210)"
+text_color = "#444"
+text_color_dark = "#222"
+body_color = "#fff"
+border_color = "#ECECEC"
+black = "#000"
+white = "#fff"
+
+primary_font = "system-ui:wght@400"
+primary_font_type = "sans-serif" # [serif/sans-serif]
 # Red combination
 # primary_color = "#FF5733"
 # light = "#FFE5D9"
@@ -84,11 +100,11 @@ link = "plugins/slick/slick.css"
 [[params.plugins.css]]
 link = "plugins/slick/slick-theme.css"
 [[params.plugins.css]]
-link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css"
+link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css"
 [[params.plugins.css]]
-link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css"
+link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css"
 [[params.plugins.css]]
-link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css"
+link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/solid.min.css"
 
 
 # JS Plugins

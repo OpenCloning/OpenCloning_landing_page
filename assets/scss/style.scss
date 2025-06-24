@@ -7,10 +7,10 @@ $body-color: {{.body_color | default "#fff"}};
 $border-color: {{.border_color | default "#ECECEC"}};
 $black: {{.black | default "#000"}};
 $white: {{.white | default "#fff"}};
-$light: {{.light | default "#EDF6F5"}};
+$light: {{"mix($primary-color, $white, 10%)"}};
 
 // Font Variables
-$primary-font: '{{ replaceRE ":[ital,]*wght@[0-9,;]+" "" .primary_font | default "Lato"}}', {{.primary_font_type | default "sans-serif"}};
+$primary-font: '{{ replaceRE ":[ital,]*wght@[0-9,;]+" "" .primary_font | default "Segoe UI"}}', {{.primary_font_type | default "sans-serif"}};
 $icon-font: '{{.icon_font | default "Font Awesome 5 Free"}}';
 {{ end }}
 

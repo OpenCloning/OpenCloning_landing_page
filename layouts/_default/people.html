@@ -1,0 +1,29 @@
+{{ define "main" }}
+
+{{ partial "page-header.html" . }}
+
+<section class="section mt">
+    <div class="container">
+        {{ .Content }}
+        {{ with .Params.people }}
+        {{ range . }}
+        {{ if eq .section "main" }}
+        <div class="row justify-content-center">
+            {{ partial "person.html" . }}
+        </div>
+        {{ end }}
+        {{ end }}
+        {{ end }}
+
+        <h2 class="mt-5 mb-3 text-center">Collaborators</h2>
+        {{ with .Params.people }}
+        {{ range . }}
+        {{ if eq .section "collaborators" }}
+        {{ partial "person.html" . }}
+        {{ end }}
+        {{ end }}
+        {{ end }}
+    </div>
+</section>
+
+{{ end }}

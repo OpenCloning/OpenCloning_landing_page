@@ -4,7 +4,8 @@
         <div class="text-center mb-2 slider-title">{{ .title }}</div>
         <div>
             {{ if eq .type "image" }}
-            <img src="{{ .path | relURL }}" alt="" class="img-fluid text-center mx-auto">
+            <img src="{{ .path | relURL }}" alt=""
+                class="img-fluid text-center mx-auto {{ if .large_image }}img-large{{ end }}">
             {{ else if eq .type "code" }}
             {{ $content := readFile .path }}
             {{ $ext := path.Ext .path }}

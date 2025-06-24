@@ -6,8 +6,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-10 mx-auto text-center">
-                <h1>{{ .title | markdownify }}</h1>
-                <p>{{ .content | markdownify }}</p>
+                <h1>{{ site.Params.Title | markdownify }}</h1>
+                <p>{{ site.Params.description | markdownify }}</p>
                 {{ if .button.enable }}
                 {{ with .button }}
                 <div><a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a></div>
@@ -25,15 +25,15 @@
 <!-- feature -->
 {{ with .Params.feature }}
 {{ if .enable }}
-<section class="feature-section section bg-light">
+<section class="feature-section section bg-primary">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 text-center">
+            <div class="text-center">
                 <h2 class="section-title">{{ .title | markdownify }}</h2>
             </div>
             {{ range .feature_item }}
             {{/* When clicked, the page will scroll to the section with the same id as the feature name */}}
-            <div class="col-md-4 col-sm-6 mb-4" onclick="window.location.href='#{{ .name | urlize }}'">
+            <div class="col-md-3 col-sm-6 mb-4" onclick="window.location.href='#{{ .name | urlize }}'">
                 <div class="feature-card text-center">
                     <i class="{{.icon}} mb-3"></i>
                     <h4 class="mb-2">{{ .name | title }}</h4>
@@ -48,15 +48,27 @@
 {{ end }}
 <!-- /feature -->
 
+<!-- button link -->
+{{ with .Params.button_link }}
+{{ if .enable }}
+<section class="section text-center button-link-section">
+    <h2 class="section-title">{{ .title | markdownify }}</h2>
+    <a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn">{{ .label }}</a>
+</section>
+{{ end }}
+{{ end }}
+<!-- /button link -->
+
+
 <!-- service -->
 {{ with .Params.service }}
 {{ if .enable }}
 {{ range $i,$p := .service_item }}
 {{if modBool $i 2}}
-<section class="section">
+<section class="section" id="{{ .title | urlize }}">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-6 order-2 order-md-1">
+            <div class="col-md-6 order-2 order-md-1 text-right pr-4">
                 {{ partial "section-content.html" . }}
             </div>
             <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
@@ -66,13 +78,13 @@
     </div>
 </section>
 {{ else }}
-<section class="section bg-light">
+<section class="section bg-light" id="{{ .title | urlize }}">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6 mb-4 mb-md-0">
                 {{ partial "panel-display.html" . }}
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 text-left pl-4">
                 {{ partial "section-content.html" . }}
             </div>
         </div>
@@ -104,38 +116,41 @@
 <!-- call to action -->
 {{ with .Params.call_to_action }}
 {{ if .enable }}
-<section class="section bg-light">
+<section class="section bg-light call-to-action-section">
     <div class="text-center container section shadow rounded-lg px-4 bg-white">
         <div class="row">
             <div class="col-lg-7 mx-auto">
-                <h2 class="section-title">{{ .title | markdownify }}</h2>
+                <h2 class="section-title mb-3">{{ .title | markdownify }}</h2>
                 {{with .content }}<p class="mb-4 lead">{{ . | markdownify }}</p>{{ end }}
             </div>
         </div>
-        {{ with $.Params.logo }}
-        {{ if .enable }}
-
-
-        <div class="row logo-container mt-4 justify-content-center align-items-center">
-            {{ range .logo_items }}
-            <div class="col-lg-2 col-md-3 col-sm-4 col-6 logo-item mb-4 align-items-center justify-content-center">
-                <a href="{{ .link | relURL }}" target="_blank" rel="noopener noreferrer" title="{{ .image }}"
-                    class="d-flex align-items-center justify-content-center h-100">
-                    <img src="{{ .image | relURL }}" alt="" class="img-fluid">
-                </a>
-            </div>
-            {{ end }}
-        </div>
-        {{ end }}
-        {{ end }}
 
         <div class="text-center"></div>
-        {{ if .button.enable }}
-        {{ with .button }}
+        {{ range .buttons }}
+        {{ if .enable }}
         <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn btn-primary" style="font-size: 1.5em;"> {{ .label
             }}</a>
         {{ end }}
         {{ end }}
+        {{ with $.Params.logo }}
+        {{ if .enable }}
+
+        <div class="logo-container mt-4 justify-content-center align-items-center text-center">
+            <h3 class="section-title mb-3 mt-3">{{ .title | markdownify }}</h3>
+            <div class="row justify-content-center">
+                {{ range .logo_items }}
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 logo-item mb-4 align-items-center justify-content-center">
+                    <a href="{{ .link | relURL }}" title="{{ .image }}"
+                        class="d-flex align-items-center justify-content-center h-100">
+                        <img src="{{ .image | relURL }}" alt="" class="img-fluid">
+                    </a>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+        {{ end }}
+
     </div>
     </div>
 </section>

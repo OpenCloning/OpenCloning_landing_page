@@ -1,44 +1,43 @@
-{{ with .Params.people }}
-<div class="row justify-content-center">
-    {{ range . }}
-    <div class="row mb-4 person">
-        <div class="col-md-3">
-            <div class="person text-center">
-                {{ if .image }}
-                <img src="{{ .image | relURL }}" alt="{{ .name }}" class="img-fluid rounded-circle mb-3">
+<div class="row mb-4 person">
+    <div class="col-md-3">
+        <div class="person text-center">
+            {{ if .image }}
+            <img src="{{ .image | relURL }}" alt="{{ .name }}" class="img-fluid rounded-circle mb-3">
+            {{ end }}
+            <div class="social-links">
+                {{ if .github }}
+                <a href="{{ .github }}" target="_blank" rel="noopener noreferrer" class="mr-2">
+                    <i class="fab fa-github fa-lg"></i>
+                </a>
                 {{ end }}
-                <div class="social-links">
-                    {{ if .github }}
-                    <a href="{{ .github }}" target="_blank" rel="noopener noreferrer" class="mr-2">
-                        <i class="fab fa-github fa-lg"></i>
-                    </a>
-                    {{ end }}
-                    {{ if .twitter }}
-                    <a href="{{ .twitter }}" target="_blank" rel="noopener noreferrer" class="mr-2">
-                        <i class="fab fa-twitter fa-lg"></i>
-                    </a>
-                    {{ end }}
-                    {{ if .linkedin }}
-                    <a href="{{ .linkedin }}" target="_blank" rel="noopener noreferrer" class="mr-2">
-                        <i class="fab fa-linkedin fa-lg"></i>
-                    </a>
-                    {{ end }}
-                    {{ if .orcid }}
-                    <a href="{{ .orcid }}" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-orcid fa-lg"></i>
-                    </a>
-                    {{ end }}
-                </div>
+                {{ if .twitter }}
+                <a href="{{ .twitter }}" target="_blank" rel="noopener noreferrer" class="mr-2">
+                    <i class="fab fa-twitter fa-lg"></i>
+                </a>
+                {{ end }}
+                {{ if .bluesky }}
+                <a href="{{ .bluesky }}" target="_blank" rel="noopener noreferrer" class="mr-2">
+                    <i class="fa-brands fa-bluesky"></i>
+                </a>
+                {{ end }}
+                {{ if .linkedin }}
+                <a href="{{ .linkedin }}" target="_blank" rel="noopener noreferrer" class="mr-2">
+                    <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+                {{ end }}
+                {{ if .orcid }}
+                <a href="{{ .orcid }}" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-orcid fa-lg"></i>
+                </a>
+                {{ end }}
             </div>
         </div>
-        <div class="col-md-8">
-            <h3 class="mb-1">{{ .name }}</h3>
-            {{ if .affiliation }}
-            <p class="mb-2 affiliation">{{ .affiliation }}</p>
-            {{ end }}
-            <p class="mb-3">{{ .bio | markdownify }}</p>
-        </div>
     </div>
-    {{ end }}
+    <div class="col-md-8">
+        <h3 class="mb-1">{{ .name }}</h3>
+        {{ if .affiliation }}
+        <p class="mb-2 affiliation"> <span class="font-weight-bold">{{ .affiliation }} </span> - {{ .role }}</p>
+        {{ end }}
+        <p class="mb-3">{{ .bio | markdownify }}</p>
+    </div>
 </div>
-{{ end }}

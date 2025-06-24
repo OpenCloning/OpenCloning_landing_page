@@ -1,38 +1,40 @@
 // banner
 .banner {
-  padding: 40px 0 40px;
-  background-color: $light;
+
+  background-color: $primary-color;
 }
 
 .banner .container {
-  border-radius: 10px;
-  background-color: $white;
-  padding: 40px;
-  transition: .2s ease;
-
-  @extend .shadow;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: $white;
 
 }
 
 .banner p {
-  font-size: 1.4em;
+  font-size: 1.2em;
+  color: $white;
 }
 
 .feature-card {
   border-radius: 10px;
-  padding: 20px;
-  transition: .2s ease;
+  padding: 15px;
+  // transition: .2s ease;
   background-color: $white;
-
-  &:hover {
-    @extend .shadow;
-  }
 
   svg,
   i {
     font-size: 30px;
     color: $primary-color;
     display: inline-block;
+  }
+
+  h4 {
+    color: $primary-color;
+  }
+
+  p {
+    color: $text-color;
   }
 }
 
@@ -378,4 +380,21 @@ a.post-title {
 .price {
   font-size: 50px;
   color: $text-color-dark;
+}
+
+.slick-slide {
+  img {
+    border-radius: 10px;
+    border: 2px solid $primary-color;
+  }
+}
+
+.call-to-action-section {
+  .btn {
+    margin-right: 10px;
+  }
+}
+
+.content p a {
+  color: $primary-color;
 }

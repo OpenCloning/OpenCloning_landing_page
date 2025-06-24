@@ -11,23 +11,30 @@ feature:
     # feature item loop
     - name : "Import from anywhere"
       icon : "fas fa-file-import"
-      content : "Your files, NCBI, AddGene, SnapGene, iGEM, etc."
+      content : "Your files, NCBI, AddGene, SnapGene, iGEM..."
 
     # feature item loop
     - name : "Engineer anything"
       icon : "fas fa-dna"
-      content : "PCR, Gibson, Golden Gate, Gateway, In vivo assembly, CRISPR, homologous recombination, etc."
+      content : "Gibson, Golden Gate, Gateway, In vivo assembly..."
 
     # feature item loop
     - name : "Automate everything"
       icon : "fas fa-robot"
-      content : "Use scripts, notebook, forms and templates to automate repetitive design and engineering tasks"
+      content : "Create scripts, notebooks, templates and forms"
 
     # feature item loop
     - name : "Share with anyone"
       icon : "fas fa-users"
-      content : "Export your cloning workflow in a well-documented and FAIR Open File Format."
+      content : "Export cloning workflows in FAIR Open File Format."
 
+#################### Button link #####################
+
+button_link:
+  enable : true
+  title: "Ready to Get Started?"
+  label : "▶ Try it here"
+  link : "https://app.opencloning.org"
 
 
 ######################### Service #####################
@@ -58,26 +65,31 @@ service:
       - path: "images/supported_cloning.png"
         title: "Support for most cloning methods"
         type: "image"
-
       - path: "images/primer_design.gif"
-        title: "Design primers for Homologous Recombination, Gibson, etc."
+        title: "Primer design for Homologous Recombination, Gibson..."
         type: "image"
       content : "Supports most cloning methods and has powerful primer design capabilities."
-      button:
-        enable : true
-        label : "Check it out"
-        link : "https://github.com/hiyama341/teemi"
+      # button:
+      #   enable : true
+      #   label : "Check it out"
+      #   link : "https://github.com/hiyama341/teemi"
 
     - title : "Automate everything"
       panels:
       - path: "images/templates.gif"
-        title: "Use templates when using cloning kits"
+        title: "Use cloning kit templates"
         type: "image"
+      - path: "./opencloning_script1.py"
+        title: "Programmaticly load sequences"
+        type: "code"
+      - path: "./opencloning_script2.py"
+        title: "Programmaticly design cloning strategies"
+        type: "code"
       content : "Use scripts, notebook, forms and templates to speed up design"
       button:
         enable : true
-        label : "Get started"
-        link : "https://github.com/hiyama341/teemi"
+        label : "Get started with scripting"
+        link : "https://github.com/manulera/OpenCloning_backend/tree/master/examples/scripting"
 
     # service item loop
     - title : "Share with anyone"
@@ -85,58 +97,51 @@ service:
       - path: "images/cloning_strategy.png"
         title: "Capture the entire cloning workflow"
         type: "image"
+        large_image: true
       - path: "./syc_model1.json"
-        title: "External sequence: AddGene plasmid"
+        title: "Data model for AddGene plasmid"
         type: "code"
-      # - path: "./syc_model2.json"
-      #   title: "External sequence: NCBI genome region with gene of interest"
-      #   type: "code"
-      # - path: "./syc_model3.json"
-      #   title: "Experiment: Gibson assembly of a plasmid"
-      #   type: "code"
       - path: "./syc_model4.json"
-        title: "Experiment: PCR"
+        title: "Data model for PCR"
         type: "code"
       - path: "https://linkml.io/uploads/linkml-logo_color.png"
         title: "Powered by LinkML"
         type: "image"
         content: "LinkML allows you to work with this data model in your stack of choice: Python, SQL, RDF, JSON Schema, TypeScript, etc."
-        button:
-          content: "Learn more"
-          link: "https://linkml.io/"
-      content : "You can export full DNA engineering workflows. OpenCloning uses a simple interoperable data model developed with [LinkML](https://linkml.io/) to represent the provenance of engineered DNA sequences."
+      content : "Export full DNA engineering workflows to JSON. OpenCloning uses a simple interoperable data model developed with [LinkML](https://linkml.io/)."
       button:
         enable : true
         label : "Check it out"
-        link : "https://github.com/genestorian/ShareYourCloning_LinkML?tab=readme-ov-file"
-
-#################### Logo section #####################
-logo:
-  enable : true
-  logo_items:
-    - image: "https://www.pombase.org/assets/pombase-logo.png"
-      link: "https://www.pombase.org"
-    - image: "https://www.shareyourgreendesign.com/wp-content/uploads/2023/12/opp_3210.png"
-      link: "https://www.dtu.dk/english/"
-    - image: "https://www.elabftw.net/img/elabftw-logo.png"
-      link: "https://www.elabftw.net/"
-    - image: "https://www.embl.org/guidelines/design/wp-content/uploads/2022/02/EMBL_logo_colour_DIGITAL.png"
-      link: "https://labid-demo.embl.de/"
+        link : "https://github.com/OpenCloning/OpenCloning_LinkML"
 
 
 ##################### Call to action #####################
 call_to_action:
   enable : true
-  title : "Join our community"
+  title : "Start using OpenCloning"
   image : "images/cta.svg"
   content : "
-  Our goal is to help **adapt** and **implement** these tools in diverse settings: BioFoundries, Electronic Lab Notebooks, Data repositories, research groups, etc.
-
-
-  Join like-minded scientists in improving documentation and reproducibility in cloning
+  Whether you work as a researcher, platform scientist, or in industry, OpenCloning can help you with DNA engineering.
   "
-  button:
-    enable : true
-    label : "Contact Us"
-    link : "contact/"
+  buttons:
+    - enable : true
+      label : "Newsletter"
+      link : "contact/"
+    - enable : true
+      label : "▶ Try it"
+      link : "https://app.opencloning.org"
+
+
+#################### Logo section #####################
+logo:
+  enable : true
+  title : "Success stories"
+  logo_items:
+    - image: "https://www.elabftw.net/img/elabftw-logo.png"
+      link: "/success-stories/elabftw"
+
+
+
+
 ---
+
