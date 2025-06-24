@@ -49,7 +49,7 @@ button.slick-arrow.slick-next:before {
 button.slick-arrow.slick-prev:before {
     content: "\f053";
     font-family: "Font Awesome 6 Free";
-    
+    padding-left: 10px;
     color: $primary-color;
 }
 

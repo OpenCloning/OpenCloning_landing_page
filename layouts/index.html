@@ -66,9 +66,9 @@
 {{ range $i,$p := .service_item }}
 {{if modBool $i 2}}
 <section class="section" id="{{ .title | urlize }}">
-    <div class="container">
+    <div class="container px-4">
         <div class="row align-items-center">
-            <div class="col-md-6 order-2 order-md-1 text-right pr-4">
+            <div class="col-md-6 order-1 order-md-2 text-center text-md-right">
                 {{ partial "section-content.html" . }}
             </div>
             <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
@@ -79,12 +79,12 @@
 </section>
 {{ else }}
 <section class="section bg-light" id="{{ .title | urlize }}">
-    <div class="container">
+    <div class="container px-4">
         <div class="row align-items-center">
-            <div class="col-md-6 mb-4 mb-md-0">
+            <div class="col-md-6 mb-4 mb-md-0 order-2 order-md-1">
                 {{ partial "panel-display.html" . }}
             </div>
-            <div class="col-md-6 text-left pl-4">
+            <div class="col-md-6 text-left pl-4 text-center text-md-left order-1 order-md-2">
                 {{ partial "section-content.html" . }}
             </div>
         </div>
@@ -128,7 +128,8 @@
         <div class="text-center"></div>
         {{ range .buttons }}
         {{ if .enable }}
-        <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn btn-primary" style="font-size: 1.5em;"> {{ .label
+        <a href="{{ .link | relURL }}" target="_blank" title="{{ .label }}" class="btn btn-primary m-2"
+            style="font-size: 1.5em;"> {{ .label
             }}</a>
         {{ end }}
         {{ end }}

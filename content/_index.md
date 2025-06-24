@@ -126,7 +126,7 @@ call_to_action:
   buttons:
     - enable : true
       label : "Newsletter"
-      link : "contact/"
+      link : "https://eepurl.com/h9-n71"
     - enable : true
       label : "▶ Try it"
       link : "https://app.opencloning.org"
