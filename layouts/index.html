@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-10 mx-auto text-center">
-                <h1>{{ site.Params.Title | markdownify }}</h1>
+                <h1>{{ site.Title | markdownify }}</h1>
                 <p>{{ site.Params.description | markdownify }}</p>
                 {{ if .button.enable }}
                 {{ with .button }}

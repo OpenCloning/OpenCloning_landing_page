@@ -1,8 +1,8 @@
 ---
 ####################### Banner #########################
 banner:
-  title : "OpenCloning"
-  content : "An Open-Source web application for DNA engineering"
+  button:
+    enable: false
 
 ##################### Feature ##########################
 feature:
