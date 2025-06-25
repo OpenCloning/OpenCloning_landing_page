@@ -3,6 +3,21 @@
   font-size: 1.4em;
 }
 
+
+
+header nav.navbar {
+  width:100%;
+  margin-right: 0;
+  padding-right: 0;
+  padding-top: 0;
+
+  .navbar-brand {
+    padding-left: 30px;
+    padding-right: 0;
+  }
+
+}
+
 .navbar a.navbar-brand {
   font-size: 1.4em;
   color: $white;
@@ -19,6 +34,11 @@
     text-transform: capitalize;
     font-weight: 700;
   }
+}
+
+ul.navbar-nav {
+  
+  padding-right: 40px;
 }
 
 .navbar-light .navbar-nav .nav-link {

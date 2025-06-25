@@ -138,7 +138,7 @@ logo:
   title : "Success stories"
   logo_items:
     - image: "https://www.elabftw.net/img/elabftw-logo.png"
-      link: "/success-stories/elabftw"
+      link: "/success-stories#elabftw"
 
 
 

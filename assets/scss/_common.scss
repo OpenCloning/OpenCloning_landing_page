@@ -8,19 +8,6 @@ body {
   color: $white;
 }
 
-body::-webkit-scrollbar {
-  width: .5rem;
-}
-
-body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: $primary-color;
-}
-
-
 /* preloader */
 
 .preloader {
@@ -207,4 +194,17 @@ textarea.form-control {
     left: -30px;
     top: 3px;
   }
+}
+
+#github-corner-svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  width: 90px;
+  height: 90px;
+  @media (max-width: 990px) {
+    display: none;
+  }
+  
 }
