@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-BaseURL = "https://opencloning-landing-page.netlify.app/"
+BaseURL = "https://opencloning.org/"
 title = "OpenCloning"
 theme = "bigspring-light"
 # post pagination
