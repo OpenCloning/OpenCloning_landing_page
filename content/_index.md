@@ -80,16 +80,16 @@ service:
         title: "Use cloning kit templates"
         type: "image"
       - path: "./opencloning_script1.py"
-        title: "Programmaticly load sequences"
+        title: "Programmatically load sequences"
         type: "code"
       - path: "./opencloning_script2.py"
-        title: "Programmaticly design cloning strategies"
+        title: "Programmatically design cloning strategies"
         type: "code"
       content : "Use scripts, notebook, forms and templates to speed up design"
       button:
         enable : true
         label : "Get started with scripting"
-        link : "https://github.com/manulera/OpenCloning_backend/tree/master/examples/scripting"
+        link : "https://github.com/manulera/OpenCloning_backend/?tab=readme-ov-file#scripting-with-pydna"
 
     # service item loop
     - title : "Share with anyone"
@@ -98,10 +98,10 @@ service:
         title: "Capture the entire cloning workflow"
         type: "image"
         large_image: true
-      - path: "./syc_model1.json"
+      - path: "./data_model1.json"
         title: "Data model for AddGene plasmid"
         type: "code"
-      - path: "./syc_model4.json"
+      - path: "./data_model2.json"
         title: "Data model for PCR"
         type: "code"
       - path: "https://linkml.io/uploads/linkml-logo_color.png"

@@ -1,5 +1,5 @@
 addgene_source = AddgeneIdSource(id=1, repository_id="52691", repository_name="addgene")
-addgene_result = await get_from_repository_id_addgene(addgene_source)
+addgene_result = get_from_repository_id_addgene(addgene_source)
 
 locus_source = GenomeCoordinatesSource(
     id=2,
@@ -10,4 +10,4 @@ locus_source = GenomeCoordinatesSource(
     end=437345,
     strand=-1,
 )
-locus_result = await genome_coordinates(locus_source)
+locus_result = genome_coordinates(locus_source)

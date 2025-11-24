@@ -1,0 +1,28 @@
+{
+    "id": 4,
+    "type": "PCRSource",
+    "input": [
+      {
+        "type": "AssemblyFragment",
+        "sequence": 9,
+        "left_location": null,
+        "right_location": "32..51",
+        "reverse_complemented": false
+      },
+      {
+        "type": "AssemblyFragment",
+        "sequence": 1,
+        "left_location": "1001..1020",
+        "right_location": "4053..4072",
+        "reverse_complemented": false
+      },
+      {
+        "type": "AssemblyFragment",
+        "sequence": 10,
+        "left_location": "1..20",
+        "right_location": null,
+        "reverse_complemented": true
+      }
+    ],
+    "circular": false
+  }

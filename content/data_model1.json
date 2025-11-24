@@ -1,0 +1,9 @@
+{
+    "id": 1,
+    "type": "AddgeneIdSource",
+    "input": [],
+    "repository_id": "65109",
+    "repository_name": "addgene",
+    "sequence_file_url": "https://media.addgene.org/snapgene-media/v1.7.9-0-g88a3305/sequences/110162/c1c98803-c8ba-44a6-95b8-d6a94097e36f/addgene-plasmid-65109-sequence-110162.gbk",
+    "addgene_sequence_type": "depositor-full"
+  }
