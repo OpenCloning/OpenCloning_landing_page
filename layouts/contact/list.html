@@ -2,9 +2,13 @@
 
 {{ partial "page-header.html" . }}
 
-<section class="section mt container col-lg-6">
-    <div class="container text-center">
-        {{ .Content }}
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="content">{{ .Content }}</div>
+            </div>
+        </div>
     </div>
 </section>
 

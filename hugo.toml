@@ -49,6 +49,13 @@ title = "Contact"
 url = "contact/"
 weight = 5
 
+[[menu.main]]
+identifier = "Changelog"
+name = "Changelog"
+title = "Changelog"
+url = "changelog/"
+weight = 6
+
 #################### default parameters ################################
 [params]
 # logo = "images/logo.png"
