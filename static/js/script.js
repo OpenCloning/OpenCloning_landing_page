@@ -33,4 +33,15 @@ window.addEventListener('load', function () {
             gif.attr('src', '').attr('src', src);
         });
     });
+
+    // Add umami event listeners to anchors
+    document.querySelectorAll('a').forEach(a => {
+        console.log(a.host, window.location.host);
+        if (a.host !== window.location.host && !a.getAttribute('data-umami-event')) {
+            a.setAttribute('data-umami-event', 'outbound-link-click');
+            a.setAttribute('data-umami-event-url', a.href);
+            a.setAttribute('data-umami-event-page', window.location.pathname);
+        }
+    });
+
 });
