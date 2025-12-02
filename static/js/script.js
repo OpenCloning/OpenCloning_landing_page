@@ -36,7 +36,6 @@ window.addEventListener('load', function () {
 
     // Add umami event listeners to anchors
     document.querySelectorAll('a').forEach(a => {
-        console.log(a.host, window.location.host);
         if (a.host !== window.location.host && !a.getAttribute('data-umami-event')) {
             a.setAttribute('data-umami-event', 'outbound-link-click');
             a.setAttribute('data-umami-event-url', a.href);
