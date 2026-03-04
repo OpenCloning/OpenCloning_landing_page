@@ -1,6 +1,12 @@
 # Changelog
 
-Main user-facing changes are listed here. For a full list of changes, see the GitHub release notes of the [frontend](https://github.com/manulera/OpenCloning_frontend/releases) and [backend](https://github.com/manulera/OpenCloning_backend/releases) repositories.
+Main user-facing changes are listed here. For a full list of changes, see the GitHub release notes of the [frontend](https://github.com/manulera/OpenCloning_frontend/blob/master/apps/opencloning/CHANGELOG.md) and [backend](https://github.com/manulera/OpenCloning_backend/releases) repositories.
+
+## Assembler
+
+The OpenCloning Assembler is a tool that allows you to clone with MoClo and Golden Gate kits. Designed to demistify Golden Gate assembly for newbies and to save time for experts, it makes combinatorial assembly using MoClo kits blazing fast. The best way to get a feeling of what it can do is to try it with one of the Syntaxes that are already available. Check out this [demo video](https://www.youtube.com/watch?v=ecd9WUIz6O8) or the [documentation](https://docs.opencloning.org/assembler/).
+
+<img src="/images/changelog/changelog_assembler.png" style="width: 100%; height: auto;" caption="OpenCloning Assembler" alt="OpenCloning Assembler" title="OpenCloning Assembler" />
 
 ## Manual annotation
 
