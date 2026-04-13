@@ -2,6 +2,14 @@
 
 Main user-facing changes are listed here. For a full list of changes, see the GitHub release notes of the [frontend](https://github.com/manulera/OpenCloning_frontend/blob/master/apps/opencloning/CHANGELOG.md) and [backend](https://github.com/manulera/OpenCloning_backend/releases) repositories.
 
+## Snapgene history parsing
+
+OpenCloning now parses the history of SnapGene files! You can just drag-and-drop a single .dna file into OpenCloning, and it will parse its history. You can see it in action in [this LinkedIn post](https://www.linkedin.com/feed/update/urn:li:activity:7449368101571366912/). If you want to use this in scripts, check out [this function](https://pydna.readthedocs.io/latest/reference/pydna.html#pydna.snapgene_history_parser.parse_snapgene_history).
+
+## Phage recombinases
+
+OpenCloning now supports custom phage recombinases. You can simulate site-specific recombination defining your own recognition sites (e.g. custom attB/attP/attL/attR sequences). Check out the [documentation](https://docs.opencloning.org/methods/phage_recombinases/).
+
 ## Assembler
 
 The OpenCloning Assembler is a tool that allows you to clone with MoClo and Golden Gate kits. Designed to demistify Golden Gate assembly for newbies and to save time for experts, it makes combinatorial assembly using MoClo kits blazing fast. The best way to get a feeling of what it can do is to try it with one of the Syntaxes that are already available. Check out this [demo video](https://www.youtube.com/watch?v=ecd9WUIz6O8) or the [documentation](https://docs.opencloning.org/assembler/).
