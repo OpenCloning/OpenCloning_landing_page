@@ -2,6 +2,10 @@
 
 Main user-facing changes are listed here. For a full list of changes, see the GitHub release notes of the [frontend](https://github.com/manulera/OpenCloning_frontend/blob/master/apps/opencloning/CHANGELOG.md) and [backend](https://github.com/manulera/OpenCloning_backend/releases) repositories.
 
+## Using digestion fragments or oligonucleotid hybridization products in Golden Gate assembly
+
+OpenCloning now supports using digestion fragments or oligonucleotid hybridization products in Golden Gate assembly. Previously, you could only provide sequences that would be restricted by the assembly enzymes as inputs. Now, you can provide an already restricted fragment as input. This is particularly useful if you use oligonucleotid hybridization products as inputs for custom DNA in Golden Gate assembly.
+
 ## Snapgene history parsing
 
 OpenCloning now parses the history of SnapGene files! You can just drag-and-drop a single .dna file into OpenCloning, and it will parse its history. You can see it in action in [this LinkedIn post](https://www.linkedin.com/feed/update/urn:li:activity:7449368101571366912/). If you want to use this in scripts, check out [this function](https://pydna.readthedocs.io/latest/reference/pydna.html#pydna.snapgene_history_parser.parse_snapgene_history).
